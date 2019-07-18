@@ -1,31 +1,53 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { withStyleProps, Flex, Heading, Text, Box } from "roses"
+import { withStyleProps, Flex, Heading, Text } from "roses"
 
 const Card = withStyleProps("Card")
 
 export default () => (
-  <Box rx={{ width: "100%", textAlign: "center" }}>
-    <Card rx={{ width: ["200px", "400px", "600px"], mx: "auto" }}>
+  <Flex
+    rx={{
+      width: "100%",
+      alignItems: "center",
+      justifyContent: "center",
+      minHeight: "100vh",
+      bg: "muted",
+    }}
+  >
+    <Card
+      rx={{
+        width: ["200px", "400px", "600px"],
+        mx: "auto",
+        my: [1, 3],
+        bg: "white",
+      }}
+    >
       <Flex rx={{ flexDirection: "column" }}>
-        <Heading rx={{ color: "primary" }}>Hello Roses!</Heading>
-        <Text rx={{ color: "secondary", textAlign: "left" }}>
-          Sit fugit molestias sit assumenda sint in nemo. Ut vero in voluptate
-          molestias veniam. Assumenda tenetur officia est omnis et. Architecto
-          unde inventore enim quo. Quis qui velit quia officiis esse enim qui.
-          <br />
-          Eos temporibus sit ex perferendis. Omnis voluptatum nisi facilis neque
-          dolor aut eos nihil minima. Natus qui impedit sapiente officiis
-          consequatur quisquam praesentium. Sed sed quas doloremque facere
-          molestias repellendus qui et voluptatem. Qui dolores numquam
-          laudantium sequi. Quidem aspernatur consequuntur eius sed error ipsum.
-          <br />
-          Ut iste placeat culpa. Libero rerum voluptatem qui aliquam est dolores
-          blanditiis possimus. Omnis dignissimos voluptatem sed doloribus dolore
-          dignissimos explicabo aut vero. Sit nobis deleniti corrupti impedit
-          enim expedita molestiae.
+        <Heading rx={{ color: "red", textAlign: "center" }}>Roses UI!</Heading>
+        <Text rx={{ color: "primary", textAlign: "left" }}>
+          Social entrepreneur natural resources greenwashing our work save the
+          world empower communities impact leverage. Problem-solvers improve the
+          world blended value green space we must stand up ecosystem. <br />
+          <br /> Impact investing strategy; strategy shared vocabulary empower
+          communities co-creation venture philanthropy empower communities
+          bandwidth. When do-gooder mass incarceration change-makers then;
+          policymaker strengthening infrastructure ideate compassion. Deep dive
+          cultivate energize vibrant compelling game-changer scale and impact.
+          Revolutionary challenges and opportunities dynamic, challenges and
+          opportunities empower communities co-creation a. State of play,
+          correlation global, move the needle; social return on investment
+          academic scale and impact framework ideate. <br />
+          <br /> Changemaker change-makers, change-makers shared value, data
+          low-hanging fruit. Incubator natural resources targeted social
+          enterprise citizen-centered uplift. A rubric, scale and impact, social
+          innovation synergy relief inspirational social capital. Greenwashing
+          society innovate paradigm, synergy. Society relief, empower
+          communities strategize best practices. Revolutionary outcomes,
+          framework engaging synergy shared vocabulary compelling. Best
+          practices, policymaker black lives matter cultivate issue outcomes
+          parse.
         </Text>
       </Flex>
     </Card>
-  </Box>
+  </Flex>
 )
