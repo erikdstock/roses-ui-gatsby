@@ -17,11 +17,17 @@
     "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "@styled-system/css": "^5.0.13",
     "@types/react": "^16.8.23",
+    "@types/styled-system__css": "^5.0.2",
     "gatsby": "^2.13.13",
+    "gatsby-plugin-emotion": "^4.1.2",
     "gatsby-plugin-typescript": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "roses": "^0.2.1",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
@@ -51,7 +57,7 @@
   "lint-staged": {
     "*.@(ts|tsx)": [
       "yarn lint",
-      "yarn prettier-write",
+      "yarn format",
       "git add"
     ]
   },
