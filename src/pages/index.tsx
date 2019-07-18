@@ -1,5 +1,5 @@
-// /** @jsx jsx */
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import { withStyleProps, Flex, Heading, Text, Box } from "roses"
 
 const Card = withStyleProps("Card")
